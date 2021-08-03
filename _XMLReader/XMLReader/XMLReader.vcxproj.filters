@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\PugiXML">
+      <UniqueIdentifier>{4522a2b4-b1dc-4cb2-a7fa-aee0fc592b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{46f7239e-64eb-45e0-8acd-592fe584b4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{9b799386-9026-407c-b191-e68b910f4684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Debug">
+      <UniqueIdentifier>{c4478ad3-fa9c-40e7-97f8-cf2ada221efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Release">
+      <UniqueIdentifier>{3bae478c-83af-4fca-8311-ed9f527ed524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{fca373ed-5658-4213-8df8-644592062f31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XMLReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PUGIXML\src\pugixml.cpp">
+      <Filter>Source Files\PugiXML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\src\File.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PUGIXML\src\pugiconfig.hpp">
+      <Filter>Source Files\PugiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PUGIXML\src\pugixml.hpp">
+      <Filter>Source Files\PugiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Framework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\ProjectSettings.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\ThreadFramework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Framework\__DO NOT MODIFY__">
+      <Filter>Framework</Filter>
+    </None>
+    <None Include="..\dist\File\lib\File_X86Debug.pdb">
+      <Filter>Libs\Debug</Filter>
+    </None>
+    <None Include="..\dist\File\lib\File_X86Release.pdb">
+      <Filter>Libs\Release</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\File\lib\File_X86Debug.lib">
+      <Filter>Libs\Debug</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_X86Release.lib">
+      <Filter>Libs\Release</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
