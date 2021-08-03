@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\dist\File\lib\File_X86Debug.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\dist\File\lib\File_X86Release.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\dist\GLFW\lib\GLFW_X86Debug.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\dist\GLFW\lib\GLFW_X86Release.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\dist\SB7\lib\SB7_X86Debug.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\dist\SB7\lib\SB7_X86Release.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\dist\Time\lib\Time_X86Debug.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\dist\Time\lib\Time_X86Release.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Framework\__DO NOT MODIFY__" />
+    <None Include="..\Math\lib\Math_X86Debug.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Math\lib\Math_X86Release.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\PCSTree\src\PCSTree_X86Debug.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\PCSTree\src\PCSTree_X86Release.pdb">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Models\crossModel.azul" />
+    <None Include="Models\cubeModel.azul" />
+    <None Include="Models\diamondModel.azul" />
+    <None Include="Models\pyramidModel.azul" />
+    <None Include="Shaders\colorRender.fs.glsl" />
+    <None Include="Shaders\colorRender.vs.glsl" />
+    <None Include="Shaders\colorSingleRender.fs.glsl" />
+    <None Include="Shaders\colorSingleRender.vs.glsl" />
+    <None Include="Shaders\computeMixer.cs.glsl" />
+    <None Include="Shaders\computeWorld.cs.glsl" />
+    <None Include="Shaders\constColorRender.fs.glsl" />
+    <None Include="Shaders\constColorRender.vs.glsl" />
+    <None Include="Shaders\nullRender.fs.glsl" />
+    <None Include="Shaders\nullRender.vs.glsl" />
+    <None Include="Shaders\skinColorRender.fs.glsl" />
+    <None Include="Shaders\skinColorRender.vs.glsl" />
+    <None Include="Shaders\skinSimpleColorRenderer.fs.glsl" />
+    <None Include="Shaders\skinSimpleColorRenderer.vs.glsl" />
+    <None Include="Shaders\skinTextureRender.fs.glsl" />
+    <None Include="Shaders\skinTextureRender.vs.glsl" />
+    <None Include="Shaders\spriteRender.fs.glsl" />
+    <None Include="Shaders\spriteRender.vs.glsl" />
+    <None Include="Shaders\texturePointLightDiff.fs.glsl" />
+    <None Include="Shaders\texturePointLightDiff.vs.glsl" />
+    <None Include="Shaders\textureRender.fs.glsl" />
+    <None Include="Shaders\textureRender.vs.glsl" />
+    <None Include="Texture\Texture.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\File\include\File.h" />
+    <ClInclude Include="..\dist\GLFW\include\GLFW\glfw3.h" />
+    <ClInclude Include="..\dist\GLFW\include\GLFW\glfw3native.h" />
+    <ClInclude Include="..\dist\SB7\include\GL\gl3w.h" />
+    <ClInclude Include="..\dist\SB7\include\GL\glcorearb.h" />
+    <ClInclude Include="..\dist\SB7\include\GL\glext.h" />
+    <ClInclude Include="..\dist\SB7\include\GL\glxext.h" />
+    <ClInclude Include="..\dist\SB7\include\GL\wglext.h" />
+    <ClInclude Include="..\dist\SB7\include\object.h" />
+    <ClInclude Include="..\dist\SB7\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7color.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7ext.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7ktx.h" />
+    <ClInclude Include="..\dist\SB7\include\sb7textoverlay.h" />
+    <ClInclude Include="..\dist\SB7\include\shader.h" />
+    <ClInclude Include="..\dist\SB7\include\vmath.h" />
+    <ClInclude Include="..\dist\Time\include\Time.h" />
+    <ClInclude Include="..\dist\Time\include\Timer.h" />
+    <ClInclude Include="..\Framework\Framework.h" />
+    <ClInclude Include="..\Framework\ProjectSettings.h" />
+    <ClInclude Include="..\Framework\ThreadFramework.h" />
+    <ClInclude Include="..\Math\include\Constants.h" />
+    <ClInclude Include="..\Math\include\Debug.h" />
+    <ClInclude Include="..\Math\include\Enum.h" />
+    <ClInclude Include="..\Math\include\MathApp.h" />
+    <ClInclude Include="..\Math\include\MathEngine.h" />
+    <ClInclude Include="..\Math\include\Matrix.h" />
+    <ClInclude Include="..\Math\include\Quat.h" />
+    <ClInclude Include="..\Math\include\QuatApp.h" />
+    <ClInclude Include="..\Math\include\Trig.h" />
+    <ClInclude Include="..\Math\include\Util.h" />
+    <ClInclude Include="..\Math\include\Vect.h" />
+    <ClInclude Include="..\Math\include\VectApp.h" />
+    <ClInclude Include="..\PCSTree\include\PCSNode.h" />
+    <ClInclude Include="..\PCSTree\include\PCSTree.h" />
+    <ClInclude Include="..\PCSTree\include\PCSTreeForwardIterator.h" />
+    <ClInclude Include="..\PCSTree\include\PCSTreeIterator.h" />
+    <ClInclude Include="..\PCSTree\include\PCSTreeReverseIterator.h" />
+    <ClInclude Include="2DPrimitives\Rectangle.h" />
+    <ClInclude Include="Animation\Animation.h" />
+    <ClInclude Include="Animation\AnimationController.h" />
+    <ClInclude Include="Animation\AnimationManager.h" />
+    <ClInclude Include="Animation\AnimationTransition.h" />
+    <ClInclude Include="Animation\Bone.h" />
+    <ClInclude Include="Animation\Clip.h" />
+    <ClInclude Include="Animation\Mixer.h" />
+    <ClInclude Include="Animation\Skeleton.h" />
+    <ClInclude Include="Animation\TimerController.h" />
+    <ClInclude Include="BoundingVolume\BoundingSphere.h" />
+    <ClInclude Include="BoundingVolume\BoundingSphereGameObject.h" />
+    <ClInclude Include="Camera\Camera.h" />
+    <ClInclude Include="Camera\Camera2D.h" />
+    <ClInclude Include="Camera\Camera3D.h" />
+    <ClInclude Include="Camera\CameraDemoInput.h" />
+    <ClInclude Include="Camera\CameraModel.h" />
+    <ClInclude Include="Camera\CamerasManager.h" />
+    <ClInclude Include="Font\Font.h" />
+    <ClInclude Include="Font\FontManager.h" />
+    <ClInclude Include="Font\Glyph.h" />
+    <ClInclude Include="Font\GlyphManager.h" />
+    <ClInclude Include="GameObject\GameObject.h" />
+    <ClInclude Include="GameObject\GameObject2D.h" />
+    <ClInclude Include="GameObject\GameObject3D.h" />
+    <ClInclude Include="GameObject\GameObjectAnimation.h" />
+    <ClInclude Include="GameObject\GameObjectFont.h" />
+    <ClInclude Include="GameObject\GameObjectManager.h" />
+    <ClInclude Include="GameObject\GameObjectNull.h" />
+    <ClInclude Include="GameObject\GameObjectRigid.h" />
+    <ClInclude Include="Game\Engine.h" />
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\GameManager.h" />
+    <ClInclude Include="GraphicsObject\GraphicsDebugMessage.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_ConstColor.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_FlatTexture.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_FontSprite.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_Null.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_SkinConstantColor.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_SkinSimpleColor.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_SkinTexture.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_Sprite.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_Wireframe.h" />
+    <ClInclude Include="GraphicsObject\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="GraphicsObject\RenderMaterial.h" />
+    <ClInclude Include="Image\Image.h" />
+    <ClInclude Include="Image\ImageLink.h" />
+    <ClInclude Include="Image\ImageManager.h" />
+    <ClInclude Include="Input\InputManager.h" />
+    <ClInclude Include="Input\Keyboard.h" />
+    <ClInclude Include="Input\Mouse.h" />
+    <ClInclude Include="Models\AnimPackage.h" />
+    <ClInclude Include="Models\AstroBoy.h" />
+    <ClInclude Include="Models\ChunkHeader.h" />
+    <ClInclude Include="Models\CrossModel.h" />
+    <ClInclude Include="Models\CubeModel.h" />
+    <ClInclude Include="Models\DiamondModel.h" />
+    <ClInclude Include="Models\EdPyramidModel.h" />
+    <ClInclude Include="Models\HierarchyTable.h" />
+    <ClInclude Include="Models\HumanModel.h" />
+    <ClInclude Include="Models\MilitaryModel.h" />
+    <ClInclude Include="Models\MissileModel.h" />
+    <ClInclude Include="Models\Model.h" />
+    <ClInclude Include="Models\ModelFileHeader.h" />
+    <ClInclude Include="Models\ModelLink.h" />
+    <ClInclude Include="Models\ModelManager.h" />
+    <ClInclude Include="Models\NullModel.h" />
+    <ClInclude Include="Models\PackageHeader.h" />
+    <ClInclude Include="Models\PyramidModel.h" />
+    <ClInclude Include="Models\SpaceShipModel.h" />
+    <ClInclude Include="Models\SphereModel.h" />
+    <ClInclude Include="Models\SpriteModel.h" />
+    <ClInclude Include="Models\SpriteVBO.h" />
+    <ClInclude Include="Models\TeddyModel.h" />
+    <ClInclude Include="Models\TeddyModel2.h" />
+    <ClInclude Include="Models\WarBearModel.h" />
+    <ClInclude Include="Shaders\ShaderLink.h" />
+    <ClInclude Include="Shaders\ShaderManager.h" />
+    <ClInclude Include="Shaders\ShaderObject.h" />
+    <ClInclude Include="Shaders\SSBO.h" />
+    <ClInclude Include="Texture\Texture.h" />
+    <ClInclude Include="Texture\TextureLink.h" />
+    <ClInclude Include="Texture\TextureManager.h" />
+    <ClInclude Include="Texture\TGA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="2DPrimitives\Rectangle.cpp" />
+    <ClCompile Include="Animation\Animation.cpp" />
+    <ClCompile Include="Animation\AnimationController.cpp" />
+    <ClCompile Include="Animation\AnimationManager.cpp" />
+    <ClCompile Include="Animation\AnimationTransition.cpp" />
+    <ClCompile Include="Animation\Bone.cpp" />
+    <ClCompile Include="Animation\Clip.cpp" />
+    <ClCompile Include="Animation\Mixer.cpp" />
+    <ClCompile Include="Animation\Skeleton.cpp" />
+    <ClCompile Include="Animation\TimerController.cpp" />
+    <ClCompile Include="BoundingVolume\BoundingSphere.cpp" />
+    <ClCompile Include="BoundingVolume\BoundingSphereGameObject.cpp" />
+    <ClCompile Include="Camera\Camera.cpp" />
+    <ClCompile Include="Camera\Camera2D.cpp" />
+    <ClCompile Include="Camera\Camera3D.cpp" />
+    <ClCompile Include="Camera\CameraDemoInput.cpp" />
+    <ClCompile Include="Camera\CameraModel.cpp" />
+    <ClCompile Include="Camera\CamerasManager.cpp" />
+    <ClCompile Include="Font\Font.cpp" />
+    <ClCompile Include="Font\FontManager.cpp" />
+    <ClCompile Include="Font\Glyph.cpp" />
+    <ClCompile Include="Font\GlyphManager.cpp" />
+    <ClCompile Include="GameObject\GameObject.cpp" />
+    <ClCompile Include="GameObject\GameObject2D.cpp" />
+    <ClCompile Include="GameObject\GameObject3D.cpp" />
+    <ClCompile Include="GameObject\GameObjectAnimation.cpp" />
+    <ClCompile Include="GameObject\GameObjectFont.cpp" />
+    <ClCompile Include="GameObject\GameObjectManager.cpp" />
+    <ClCompile Include="GameObject\GameObjectNull.cpp" />
+    <ClCompile Include="GameObject\GameObjectRigid.cpp" />
+    <ClCompile Include="Game\Engine.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\GameManager.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsDebugMessage.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_ColorByPosition.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_ConstColor.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_FlatTexture.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_FontSprite.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_Null.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_SkinConstantColor.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_SkinSimpleColor.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_SkinTexture.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_Sprite.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_TextureLight.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_Wireframe.cpp" />
+    <ClCompile Include="GraphicsObject\GraphicsObject_WireframeConstantColor.cpp" />
+    <ClCompile Include="Image\Image.cpp" />
+    <ClCompile Include="Image\ImageManager.cpp" />
+    <ClCompile Include="Input\InputManager.cpp" />
+    <ClCompile Include="Input\Keyboard.cpp" />
+    <ClCompile Include="Input\Mouse.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Models\AstroBoy.cpp" />
+    <ClCompile Include="Models\CrossModel.cpp" />
+    <ClCompile Include="Models\CubeModel.cpp" />
+    <ClCompile Include="Models\DiamondModel.cpp" />
+    <ClCompile Include="Models\EdPyramidModel.cpp" />
+    <ClCompile Include="Models\HierarchyTable.cpp" />
+    <ClCompile Include="Models\HumanModel.cpp" />
+    <ClCompile Include="Models\MilitaryModel.cpp" />
+    <ClCompile Include="Models\MissileModel.cpp" />
+    <ClCompile Include="Models\Model.cpp" />
+    <ClCompile Include="Models\ModelFileHeader.cpp" />
+    <ClCompile Include="Models\ModelManager.cpp" />
+    <ClCompile Include="Models\NullModel.cpp" />
+    <ClCompile Include="Models\PyramidModel.cpp" />
+    <ClCompile Include="Models\SpaceShipModel.cpp" />
+    <ClCompile Include="Models\SphereModel.cpp" />
+    <ClCompile Include="Models\SpriteModel.cpp" />
+    <ClCompile Include="Models\TeddyModel.cpp" />
+    <ClCompile Include="Models\TeddyModel2.cpp" />
+    <ClCompile Include="Models\WarBearModel.cpp" />
+    <ClCompile Include="Shaders\ShaderManager.cpp" />
+    <ClCompile Include="Shaders\ShaderObject.cpp" />
+    <ClCompile Include="Shaders\SSBO.cpp" />
+    <ClCompile Include="Texture\Texture.cpp" />
+    <ClCompile Include="Texture\TextureManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\File\lib\File_X86Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\dist\File\lib\File_X86Release.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\dist\GLFW\lib\GLFW_X86Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\dist\GLFW\lib\GLFW_X86Release.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\dist\SB7\lib\SB7_X86Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\dist\SB7\lib\SB7_X86Release.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\dist\Time\lib\Time_X86Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\dist\Time\lib\Time_X86Release.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Math\lib\Math_X86Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Math\lib\Math_X86Release.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\PCSTree\src\PCSTree_X86Debug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\PCSTree\src\PCSTree_X86Release.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Aliens.tga" />
+    <Image Include="Assets\Duckweed.tga" />
+    <Image Include="Assets\HotPink.tga" />
+    <Image Include="Assets\RedBrick.tga" />
+    <Image Include="Assets\Rocks.tga" />
+    <Image Include="Assets\Stone.tga" />
+    <Image Include="Assets\TeddyTexNORLE.tga" />
+    <Image Include="Assets\WorkingTeddyTex.tga" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F378881E-1BCC-4A2A-8E59-85BCBC1B6039}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MathEngineTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)Debug</TargetName>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)Release</TargetName>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_GLFW_WIN32;_GLFW_USE_CONFIG_H;ARGININE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";MEMORY_LOGS_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>
+      </SDLCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)GLFW\include;$(SolutionDir)SB7\include;$(SolutionDir)Math\include;$(ProjectDir);$(SolutionDir)File\include;$(SolutionDir)PCSTree\include;$(ProjectDir)Assets;$(ProjectDir)Game;$(ProjectDir)GameObject;$(ProjectDir)GraphicsObject;$(ProjectDir)Models;$(ProjectDir)Shaders;$(ProjectDir)Texture;$(ProjectDir)Input;$(ProjectDir)Camera;$(ProjectDir)BoundingVolume;$(SolutionDir)Time\include;$(ProjectDir)Animation;$(ProjectDir)Image;$(ProjectDir)2DPrimitives;$(ProjectDir)Font</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ARGININE;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";MEMORY_LOGS_DIR=R"($(SolutionDir))";TOOLS_VERSION=R"($(VCToolsVersion))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>
+      </SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)Framework;$(SolutionDir)GLFW\include;$(SolutionDir)SB7\include;$(SolutionDir)Math\include;$(ProjectDir);$(SolutionDir)File\include;$(SolutionDir)PCSTree\include;$(ProjectDir)Assets;$(ProjectDir)Game;$(ProjectDir)GameObject;$(ProjectDir)GraphicsObject;$(ProjectDir)Models;$(ProjectDir)Shaders;$(ProjectDir)Texture;$(ProjectDir)Input;$(ProjectDir)Camera;$(ProjectDir)BoundingVolume;$(SolutionDir)Time\include;$(ProjectDir)Animation;$(ProjectDir)Image;$(ProjectDir)2DPrimitives;$(ProjectDir)Font</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
